@@ -1,0 +1,69 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("govuk/component/back-to-top") {
+
+  .app-c-back-to-top__icon {
+      float: left;
+      margin-right: .3em;
+      width: .8em;
+      height: .968em
+  }
+
+  .app-c-contents-list-with-body__link-container .app-c-back-to-top {
+      margin-left: 0;
+      margin-right: 0
+  }
+
+  .app-c-contents-list-with-body__link-wrapper {
+      padding-bottom: 10px
+  }
+
+  .app-c-contents-list-with-body__link-wrapper .app-c-back-to-top {
+      padding-bottom: 10px
+  }
+
+  .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window {
+      background-color: #dee0e2;
+      bottom: -1px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1
+  }
+
+  @media (min-width: 641px) {
+      .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window {
+          padding-left:10px
+      }
+  }
+
+  .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window .app-c-back-to-top {
+      color: #005ea5;
+      margin-bottom: 0;
+      padding: 15px;
+      width: 66.6666666667%
+  }
+
+  @media (min-width: 641px) {
+      .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window .app-c-back-to-top {
+          padding:20px
+      }
+  }
+
+  .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window .app-c-back-to-top:focus {
+      outline: 0
+  }
+
+  .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window .app-c-back-to-top:hover {
+      color: #2b8cc4
+  }
+
+  .app-c-contents-list-with-body__link-wrapper.govuk-sticky-element--stuck-to-window .app-c-back-to-top:active {
+      color: #2b8cc4
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "description": "If `html` is set, this is not required. Text to use within the back to top component. If `html` is provided, the `text` argument will be ignored."
+  },
+  {
+      "name": "html",
+      "type": "string",
+      "required": true,
+      "description": "If `text` is set, this is not required. HTML to use within the back to top component. If `html` is provided, the `text` argument will be ignored."
+  },
+  {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "description": "The value of the link href attribute."
+  }
+]
