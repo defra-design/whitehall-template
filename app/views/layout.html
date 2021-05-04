@@ -40,7 +40,7 @@
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
+
   {# Set serviceName in config.js. #}
   {{ govukHeader({
     homepageUrl: "/",
@@ -72,6 +72,10 @@
 {% endif %}
 
 {% block bodyEnd %}
+{{ govukBackToTop({
+   href: "#toc",
+   text: "Contents"
+ }) }}
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block pageScripts %}{% endblock %}
