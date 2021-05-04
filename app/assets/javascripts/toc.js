@@ -1,14 +1,11 @@
 //InteractionObserver for the guidance page
-const contents = document.querySelectorAll('.responsive-bottom-margin');
+const contents = document.querySelectorAll('#main-content > div:nth-child(1), #main-content > div:nth-child(2), #contents div nav, #main-content > div:nth-child(4)')
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    console.log(entry.intersectionRatio);
     if (entry.intersectionRatio > 0) {
-      console.log('in the view');
-      document.getElementById("backToTop").classList.remove("govuk-sticky-element--hidden");
-    } else {
-      console.log('out of view');
       document.getElementById("backToTop").classList.add("govuk-sticky-element--hidden");
+    } else {
+      document.getElementById("backToTop").classList.remove("govuk-sticky-element--hidden");
     }
   });
 });
